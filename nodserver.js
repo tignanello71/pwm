@@ -13,4 +13,7 @@ var port =  process.env.OPENSHIFT_NODEJS_PORT || 8080;   // Port 8080 if you run
 var address =  process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1"; // Listening to localhost if you run locally
 
 var s = http.createServer(processa);
+console.log("server creato su " + address);
+
 s.listen(port, address);
+console.log("server in ascolto su " + port);
